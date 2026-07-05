@@ -1,0 +1,18 @@
+# === VS Code và Cấu hình Cá nhân ===
+.vscode/
+*.code-workspace
+
+# === Thư mục Build của CMake (Chứa file exe và cache nặng) ===
+build/
+CMakeUserPresets.json
+
+# === Sản phẩm biên dịch (Nếu lỡ tay tạo ra ngoài) ===
+*.exe
+*.o
+*.obj
+*.out
+*.app
+
+# === Hệ điều hành ===
+.DS_Store
+Thumbs.db
