@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"configurePresets": [
+		{
+			"name": "windows-base",
+			"displayName": "Windows Base",
+			"generator": "Ninja",
+			"binaryDir": "${sourceDir}/out/build/${presetName}",
+			"cacheVariables": {
+				"SFML_DIR": "C:/SFML-3.0.2/lib/cmake/SFML"
+			}
+		}
+	]
+}
