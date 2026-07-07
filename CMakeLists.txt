@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Tự động tìm bộ thư viện SFML trên hệ thống (Bỏ số phiên bản cứng để nhận cả bản 2.x lẫn 3.x)
 # Sửa chữ cái đầu của các component thành VIẾT HOA:
+set(SFML_DIR "C:/SFML-3.0.2/lib/cmake/SFML")
 find_package(SFML COMPONENTS Graphics Window System Audio REQUIRED)
 
 # Chỉ đường dẫn tới thư mục chứa các file Header (.hpp) của bạn
@@ -21,4 +22,4 @@ file(GLOB SOURCES "src/*.cpp")
 add_executable(my_game ${SOURCES})
 
 # Liên kết các module SFML vào file game của bạn
-target_link_libraries(my_game sfml-graphics sfml-window sfml-system sfml-audio)
+target_link_libraries(my_game SFML-graphics SFML-window SFML-system SFML-audio)
